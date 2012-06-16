@@ -10,7 +10,6 @@ if [ $1 > /dev/null 2>&1 ]
             do
                 su -c "/usr/bin/cpufreq-set -c $i -g $1";
             done
-
         echo "governor set to $1"
    else
         echo "No governor parameter given!"
